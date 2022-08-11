@@ -3,6 +3,7 @@ import React, { Component, lazy, Suspense } from 'react';
 import PropTypes from 'prop-types';
 
 import "./App.scss";
+import Loading from './components/shared/Loading/Loading';
 
 // Pages 
 const Code = lazy(() => import('./pages/Code/Code'));
