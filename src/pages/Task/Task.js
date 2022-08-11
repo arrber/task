@@ -1,14 +1,13 @@
 import React from 'react';
-import Task from '../../components/cPages/task2/Task';
+import Task2 from '../../components/cPages/Task2/Task2';
 
 
-const Home = () => {
+const Task = () => {
     return (
         <div className="home">
-            <Task/>
-
+            <Task2/>
         </div>
     );
 };
 
-export default Home;
+export default Task;

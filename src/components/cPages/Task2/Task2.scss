@@ -1,0 +1,84 @@
+.Task{
+    padding-top: 100px;
+    background-color: #c4c4c4;
+
+    .button-holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #6232FD;
+            padding: 1.175em 1.575em;
+            margin-top: 1em;
+            border-radius: 5em;
+            background: #6232FD;
+            color: #FFFFFF;
+
+            &:hover{
+                transition: all .15 linear;
+                transform: scale(1.01)
+            }
+        }
+    }
+    .card-holder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;        
+
+        .card{
+            margin: 2em 1em;
+            width: 15rem;
+            height: 25rem;
+            border: 1px solid #9047ff;
+            border-radius: 1em;
+
+            .card-img-top{
+                height: 50%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 1em;
+                margin: 0;
+                padding: 0;
+            }
+
+            .card-body{
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .text-holder{
+                    height: 60%;
+                    text-align: center;
+                }
+                .link-holder{
+                    height: 40%;
+                    object-fit: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    .link{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        border: 1px solid #fdce32;
+                        border-radius: 1em;
+                        background: #fdce32;
+                        width: 100%;
+                        color: #FFFFFF;
+            
+                        &:hover{
+                            transition: all .15 linear;
+                            transform: scale(1.01)
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+}

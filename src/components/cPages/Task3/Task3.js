@@ -1,11 +1,11 @@
 import React from "react";
 
-const Task = () => {
+const Task3 = () => {
     return(
-        <div className="Task">
+        <div className="Code">
             
         </div>
     );
 };
 
-export default Task;
+export default Task3;

@@ -1,14 +1,13 @@
 import React from 'react';
-import Code from '../../components/cPages/changeCode/Code';
+import Task3 from '../../components/cPages/Task3/Task3';
 
-
-const Home = () => {
+const Code = () => {
     return (
         <div className="home">
-            <Code/>
+            <Task3/>
 
         </div>
     );
 };
 
-export default Home;
+export default Code;

@@ -1,14 +1,13 @@
 import React from 'react';
-import Giphy from '../../components/cPages/Giphy/Giphy';
+import Task1 from '../../components/cPages/Task1/Task1';
 
-
-const Home = () => {
+const Giphy = () => {
     return (
         <div className="home">
-            <Giphy/>
+            <Task1/>
 
         </div>
     );
 };
 
-export default Home;
+export default Giphy;

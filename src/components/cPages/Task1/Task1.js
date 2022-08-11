@@ -1,6 +1,7 @@
 import React from "react";
+import "./Task1.scss";
 
-const Giphy = () => {
+const Task1 = () => {
     return(
         <div className="Giphy">
             
@@ -8,4 +9,4 @@ const Giphy = () => {
     );
 };
 
-export default Giphy;
+export default Task1;
