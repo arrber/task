@@ -3,11 +3,21 @@ import PropTypes from 'prop-types';
 
 import "./App.scss";
 
+// Pages 
+const Code = lazy(() => import('./pages/Code/Code'));
+const Giphy = lazy(() => import('./pages/Giphy/Giphy'));
+const Task = lazy(() => import('./pages/Task/Task'));
+
+
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>testn</h1>
+      <div className="App">
+          <Suspense fallback={<Loading/>}>
+          <Code/>
+          <Giphy/>
+          <Task/>
+        </Suspense>
       </div>
     );
   }
