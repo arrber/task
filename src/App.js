@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
+
 import PropTypes from 'prop-types';
 
 import "./App.scss";
