@@ -1,9 +1,17 @@
 import React, { Component, lazy, Suspense } from 'react';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import PropTypes from 'prop-types';
 
 import "./App.scss";
+
+// Components
 import Loading from './components/shared/Loading/Loading';
+import Navbar from './components/shared/Navbar/Navbar';
+
+// import Loading from './components/shared/Loading/Loading';
+// import Navbar from './components/shared/Navbar/Navbar';
+
 
 // Pages 
 const Code = lazy(() => import('./pages/changeCode/Code'));
@@ -14,14 +22,18 @@ const Task = lazy(() => import('./pages/Task/Task'));
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <Suspense fallback={<Loading/>}>
-          <Code/>
-          <Giphy/>
-          <Task/>
-          <h1>test</h1>
+      <BrowserRouter>
+        <Suspense fallback={<Loading/>}>
+        <div className="App">
+          <Navbar/>
+          <Routes>
+            <Route path="/" exact element={<Code/>}/>
+            <Route path="/Giphy" exact element={<Giphy/>}/>
+            <Route path="/Task" exact element={<Task/>}/>
+          </Routes>
+        </div>
         </Suspense>
-      </div>
+      </BrowserRouter>
     );
   }
 }

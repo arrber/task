@@ -1,0 +1,31 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.175em 0;
+    z-index: 1000;
+    background: #1f1f23;
+    
+    .desktop{
+        display: flex;
+        align-items: center;        
+        .nav-desktop{
+            font-size: 0.928em;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            .nav--link{
+                text-decoration: none;
+                padding: 1em 1.7em;
+                color: #FFFFFF;
+
+                &:hover{
+                    color: #776262;
+                    transition: all .15s linear;
+                }
+            }
+        }
+    }
+}
