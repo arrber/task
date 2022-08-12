@@ -1,7 +1,6 @@
 .Task{
     padding-top: 100px;
-    background-color: #c4c4c4;
-
+    
     .button-holder{
         display: flex;
         flex-direction: column;
@@ -12,11 +11,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid #6232FD;
+            border: 1px solid #1f1f23;
             padding: 1.175em 1.575em;
             margin-top: 1em;
             border-radius: 5em;
-            background: #6232FD;
+            background: #1f1f23;
             color: #FFFFFF;
 
             &:hover{
